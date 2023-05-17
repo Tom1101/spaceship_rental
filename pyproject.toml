@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "spaceship-rental"
+version = "0.1.0"
+description = "Coding test from QRT"
+authors = ["Tom1101 <nguyentom1101@gmail.com>"]
+readme = "README.md"
+packages = [{include = "spaceship_rental"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^2.0.1"
+pytest = "^7.3.1"
+flask = "^2.3.2"
+
+[tool.poetry.scripts]
+main = 'spaceship_rental.main:webserver'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
